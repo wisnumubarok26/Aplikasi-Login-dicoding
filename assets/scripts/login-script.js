@@ -14,7 +14,10 @@ const expectedPassword = 'superpassword';
 
 loginFormElement.addEventListener('submit', function(event) {
   event.preventDefault();
-
+  /** 
+* Membuat variabel inputPasswordElement untuk tampilan input password.
+* @constant {HTMLElement}
+*/
   const email = inputEmailElement.value;
   const password = inputPasswordElement.value;
   if (email == expectedEmail && password == expectedPassword) {
